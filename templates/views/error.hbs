@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     {{>headerLink}}
+  </head>
+
+  <body>
+    {{>navbar}}
+    <!-- main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <!-- left div -->
+            <div class="col-md-12 col-12 main_header_left align-items-center">
+                <figure class="errorImg">
+                    <img src="https://www.pngitem.com/pimgs/m/255-2550411_404-error-images-free-png-transparent-png.png" alt="suresh" class="img-fluid" title="suresh adhikari">
+                </figure>
+                <h1>{{errorMsg}}</h1>
+                <a class="btn button" href="/">Go Back</a>
+            </div>
+        </div>
+    </div>  
+    
+    <!-- footer -->
+  {{>footer}}
+  </body>
+</html>

@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "piazzolla",serif;
+}
+:root{
+    --main-bg:#1e272e;
+    --main-color:#0097e6;
+}
+html{
+    font-size: 62.5%;
+
+}
+/* fix footer at bottom always */
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    margin: 0;
+}
+.main_menu{
+    background: rgb(87, 0, 0);
+}
+.navbar{
+    color: #fff;
+    background: rgb(87, 0, 0);
+    padding: 2rem 0;
+
+}
+.navbar li {
+    margin-left: 2rem;
+}
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.navbar-toggler{
+    background-color:var(--main-color);
+}
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: var(--main-color);
+}
+@keyframes rot{
+    0%{
+        transform: skew(0deg);
+    }
+    100%{
+        transform: skew(90deg);
+    }
+}
+/* main header */
+.main_header_left{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    height: 70rem;
+    align-items: flex-start;
+}
+.main_header_left p{
+    font-size: 2rem;
+}
+.main_header_left h1{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 1rem 0 4rem 0;
+
+}
+.main_header_left .text-color{
+    color: maroon;
+    
+}
+.main_header_left .button{
+    background-color: var(--main-color);
+    border-radius: 3rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    padding: 0.8rem 1.8rem;
+    box-shadow: 0 8px 6px -6px #000;
+}
+.main_header_left .button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+.main_header_right{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    height: 70rem;
+    align-items: flex-start;
+
+}
+.main_header_right figure img{
+    width: 60rem;
+    height: 50rem;
+    /* box-shadow: 0 8px 6px -6px darkgreen; */
+    filter: drop-shadow(0 1rem 1rem rgba(0,0,0,0.7));
+
+}
+/* temp form style */
+.temp_form{
+    width: 60%;
+    margin: 10rem auto 6rem;
+    position: relative;
+
+}
+.temp_form input[type="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background: #1e202b;
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+::placeholder{
+    color: gray;
+}
+
+.temp_form input[type="submit"]{
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    border: 1px solid white;
+    outline: none;
+    padding:0 3rem;
+    border-radius: 3rem;
+    font-size: 2rem;
+    color: var(--main-color);
+    background: var(--main-bg);
+}
+.temp_form input[type="submit"]:hover{
+    color:var(--main-bg);
+    background: var(--main-color);
+    border: none;
+    
+}
+
+/* temp info style */
+.temp_information{
+    background-color: #323445;
+    width: 40rem;
+    margin: auto;
+    min-height: 20rem;
+    border-radius: 1rem;
+    font-family: "roboto",sans-serif;
+}
+.top_layer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    background: #2d303d;
+    color: #fff;
+    font-size: 1.8rem;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-weight: 400;
+}
+.main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+.main_layer #city_name{
+    padding: 2rem;
+    color: #bfc1c8; 
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.main_layer .middle_layer{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.main_layer .middle_layer p, 
+.main_layer .middle_layer .fa{
+    font-size: 7rem;
+    font-weight: 900;
+}
+.fa{
+    color: var(--main-color);
+}
+sup{
+    font-size:6rem;
+    margin-top: -2rem;
+
+}
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+/* footer code */
+.footer{
+    width: 100%;
+    background-color:maroon;
+    margin-top: auto;  
+}
+.footer span{
+    color:var(--main-color);
+    font-weight: 700;
+}
+.footer p{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 7rem;
+}
+.errorImg img{
+    width: 50rem;
+    height: 50rem;
+}
+
+
+/* media query */
+@media(max-width:768px){
+    .main_header_left{
+    height: auto;
+    margin: 5rem 0;
+}
+.main_header_right{
+    height: auto;
+    margin-top: 3rem;
+}
+
+}

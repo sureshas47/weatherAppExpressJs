@@ -243,5 +243,11 @@ sup{
     height: auto;
     margin-top: 3rem;
 }
+.temp_form{
+    width: auto;
+}
+.temp_information{
+    width: auto;
+}
 
 }
